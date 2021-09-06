@@ -7,17 +7,19 @@ import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
-    <Router>
+    <React.Fragment>
       <Navbar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/usestate">
-          <UseCaseUseState />
-        </Route>
-      </Switch>
-    </Router>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/usestate">
+            <UseCaseUseState />
+          </Route>
+        </Switch>
+      </Router>
+    </React.Fragment>
   );
 };
 
