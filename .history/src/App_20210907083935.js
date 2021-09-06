@@ -14,7 +14,7 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/usestate">
+        <Route path="/usestate">
           <UseCaseUseState />
         </Route>
         <Route path="/usestate/state-management">

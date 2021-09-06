@@ -4,7 +4,6 @@ import React from 'react';
 import Home from './components/Home/Home';
 import UseCaseUseState from './components/UseCaseUseState/UseCaseUseState';
 import Navbar from './components/Navbar/Navbar';
-import UseCaseStateManagement from './components/UseCaseUseState/UseCaseStateManagement/UseCaseStateManagement';
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/usestate">
+        <Route path="/usestate">
           <UseCaseUseState />
         </Route>
         <Route path="/usestate/state-management">
