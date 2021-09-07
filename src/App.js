@@ -11,10 +11,12 @@ import UseCaseCounter from './components/UseCaseUseState/UseCaseCounter';
 import UseCaseApi from './components/UseCaseUseState/UseCaseApi';
 import UseCaseUseReducer from './components/UseCaseUseReducer/UseCaseUseReducer';
 import UseCaseMultipleStates from './components/UseCaseUseReducer/UseCaseMultipleStates';
+import UseCaseComplexStates from './components/UseCaseUseReducer/UseCaseComplexStates';
 
 function App() {
   return (
     <div className={classes.main}>
+      <h1>React hooks use cases</h1>
       <Router>
         <Navbar />
         <Switch>
@@ -44,6 +46,9 @@ function App() {
           </Route>
           <Route exact path="/usereducer/multiple-states">
             <UseCaseMultipleStates />
+          </Route>
+          <Route exact path="/usereducer/complex-states">
+            <UseCaseComplexStates />
           </Route>
         </Switch>
       </Router>

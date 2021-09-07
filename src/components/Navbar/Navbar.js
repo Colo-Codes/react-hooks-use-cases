@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 const Navbar = props => {
     return (
         <nav>
-            <h1>This is the navbar</h1>
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/usestate">useState</Link>
@@ -18,6 +17,7 @@ const Navbar = props => {
                 <li><Link to="/usereducer">useReducer</Link>
                     <ul>
                         <li><Link to="/usereducer/multiple-states">Manage multiple states: modify an array</Link></li>
+                        <li><Link to="/usereducer/complex-states">Modify complex states, such as arrays or objects: login form</Link></li>
                     </ul>
                 </li>
             </ul>
