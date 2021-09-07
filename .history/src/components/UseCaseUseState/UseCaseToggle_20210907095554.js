@@ -12,14 +12,12 @@ const UseCaseToggle = props => {
     const toggledClass = mode ? classes.light : classes.dark;
 
     return (
-        <>
+        <div className={toggledClass}>
             <hr />
-            <div className={toggledClass}>
-                <h2>useState use case</h2>
-                <h3>Toggle flags</h3>
-                <button onClick={clickHandler}>Toggle display mode</button>
-            </div>
-        </>
+            <h2>useState use case</h2>
+            <h3>Toggle flags</h3>
+            <button onClick={clickHandler}>Toggle display mode</button>
+        </div>
     );
 };
 
