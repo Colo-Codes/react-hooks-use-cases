@@ -20,6 +20,11 @@ const Navbar = props => {
                         <li><Link to="/usereducer/complex-states">Modify complex states, such as arrays or objects: login form</Link></li>
                     </ul>
                 </li>
+                <li><Link to="/useeffect">useEffect</Link>
+                    <ul>
+                        <li><Link to="/useeffect/fetch-api">Running once on mount: fetch API data</Link></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     );

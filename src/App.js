@@ -12,6 +12,8 @@ import UseCaseApi from './components/UseCaseUseState/UseCaseApi';
 import UseCaseUseReducer from './components/UseCaseUseReducer/UseCaseUseReducer';
 import UseCaseMultipleStates from './components/UseCaseUseReducer/UseCaseMultipleStates';
 import UseCaseComplexStates from './components/UseCaseUseReducer/UseCaseComplexStates';
+import UseCaseFetchApi from './components/UseCaseUseEffect/UseCaseFetchApi';
+import UseCaseUseEffect from './components/UseCaseUseEffect/UseCaseUseEffect';
 
 function App() {
   return (
@@ -49,6 +51,12 @@ function App() {
           </Route>
           <Route exact path="/usereducer/complex-states">
             <UseCaseComplexStates />
+          </Route>
+          <Route exact path="/useeffect">
+            <UseCaseUseEffect />
+          </Route>
+          <Route exact path="/useeffect/fetch-api">
+            <UseCaseFetchApi />
           </Route>
         </Switch>
       </Router>
