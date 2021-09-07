@@ -15,6 +15,11 @@ const Navbar = props => {
                         <li><Link to="/usestate/api">Get API data and store it in state</Link></li>
                     </ul>
                 </li>
+                <li><Link to="/usereducer">useReducer</Link>
+                    <ul>
+                        <li><Link to="/usereducer/multiple-states">Manage multiple states: modify an array</Link></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     );

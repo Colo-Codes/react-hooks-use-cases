@@ -9,6 +9,8 @@ import UseCaseConditionalRender from './components/UseCaseUseState/UseCaseCondit
 import UseCaseToggle from './components/UseCaseUseState/UseCaseToggle';
 import UseCaseCounter from './components/UseCaseUseState/UseCaseCounter';
 import UseCaseApi from './components/UseCaseUseState/UseCaseApi';
+import UseCaseUseReducer from './components/UseCaseUseReducer/UseCaseUseReducer';
+import UseCaseMultipleStates from './components/UseCaseUseReducer/UseCaseMultipleStates';
 
 function App() {
   return (
@@ -22,20 +24,26 @@ function App() {
           <Route exact path="/usestate">
             <UseCaseUseState />
           </Route>
-          <Route path="/usestate/state-management">
+          <Route exact path="/usestate/state-management">
             <UseCaseStateManagement />
           </Route>
-          <Route path="/usestate/conditional-rendering">
+          <Route exact path="/usestate/conditional-rendering">
             <UseCaseConditionalRender />
           </Route>
-          <Route path="/usestate/toggle">
+          <Route exact path="/usestate/toggle">
             <UseCaseToggle />
           </Route>
-          <Route path="/usestate/counter">
+          <Route exact path="/usestate/counter">
             <UseCaseCounter />
           </Route>
-          <Route path="/usestate/api">
+          <Route exact path="/usestate/api">
             <UseCaseApi />
+          </Route>
+          <Route exact path="/usereducer">
+            <UseCaseUseReducer />
+          </Route>
+          <Route exact path="/usereducer/multiple-states">
+            <UseCaseMultipleStates />
           </Route>
         </Switch>
       </Router>
