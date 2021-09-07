@@ -1,0 +1,11 @@
+.light {
+    background-color: lightgoldenrodyellow;
+    color: darkslategray;
+    padding: 1rem 5rem;
+}
+
+.dark {
+    background-color: darkslategray;
+    color: lightgoldenrodyellow;
+    padding: 1rem 5rem;
+}

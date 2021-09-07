@@ -7,7 +7,6 @@ import Navbar from './components/Navbar/Navbar';
 import UseCaseStateManagement from './components/UseCaseUseState/UseCaseStateManagement';
 import UseCaseConditionalRender from './components/UseCaseUseState/UseCaseConditionalRender';
 import UseCaseToggle from './components/UseCaseUseState/UseCaseToggle';
-
 function App() {
   return (
     <div className={classes.main}>
