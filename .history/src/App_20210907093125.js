@@ -5,7 +5,6 @@ import Home from './components/Home/Home';
 import UseCaseUseState from './components/UseCaseUseState/UseCaseUseState';
 import Navbar from './components/Navbar/Navbar';
 import UseCaseStateManagement from './components/UseCaseUseState/UseCaseStateManagement';
-import UseCaseConditionalRender from './components/UseCaseUseState/UseCaseConditionalRender';
 
 function App() {
   return (

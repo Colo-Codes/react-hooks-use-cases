@@ -6,7 +6,6 @@ import UseCaseUseState from './components/UseCaseUseState/UseCaseUseState';
 import Navbar from './components/Navbar/Navbar';
 import UseCaseStateManagement from './components/UseCaseUseState/UseCaseStateManagement';
 import UseCaseConditionalRender from './components/UseCaseUseState/UseCaseConditionalRender';
-
 function App() {
   return (
     <div className={classes.main}>

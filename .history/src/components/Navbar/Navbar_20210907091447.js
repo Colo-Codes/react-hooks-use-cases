@@ -8,8 +8,7 @@ const Navbar = props => {
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/usestate">useState</Link>
                     <ul>
-                        <li><Link to="/usestate/state-management">State Management</Link></li>
-                        <li><Link to="/usestate/conditional-rendering">Conditional Rendering</Link></li>
+                        <li><Link to="/usestate/state-management">State management</Link></li>
                     </ul>
                 </li>
             </ul>

@@ -4,14 +4,13 @@ import React from 'react';
 import Home from './components/Home/Home';
 import UseCaseUseState from './components/UseCaseUseState/UseCaseUseState';
 import Navbar from './components/Navbar/Navbar';
-import UseCaseStateManagement from './components/UseCaseUseState/UseCaseStateManagement';
-import UseCaseConditionalRender from './components/UseCaseUseState/UseCaseConditionalRender';
+import UseCaseStateManagement from './components/UseCaseUseState/UseCaseStateManagement/UseCaseStateManagement';
 
 function App() {
   return (
-    <div className={classes.main}>
+    <div >
       <Router>
-        <Navbar />
+        <Navbar className={classes.main} />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -21,9 +20,6 @@ function App() {
           </Route>
           <Route path="/usestate/state-management">
             <UseCaseStateManagement />
-          </Route>
-          <Route path="/usestate/conditional-rendering">
-            <UseCaseConditionalRender />
           </Route>
         </Switch>
       </Router>
