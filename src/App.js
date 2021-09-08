@@ -15,6 +15,7 @@ import UseCaseComplexStates from './components/UseCaseUseReducer/UseCaseComplexS
 import UseCaseFetchApi from './components/UseCaseUseEffect/UseCaseFetchApi';
 import UseCaseUseEffect from './components/UseCaseUseEffect/UseCaseUseEffect';
 import UseCaseInputValidation from './components/UseCaseUseEffect/UseCaseInputValidation';
+import UseCaseLiveFilter from './components/UseCaseUseEffect/UseCaseLiveFilter';
 
 function App() {
   return (
@@ -61,6 +62,9 @@ function App() {
           </Route>
           <Route exact path="/useeffect/input-validation">
             <UseCaseInputValidation />
+          </Route>
+          <Route exact path="/useeffect/live-filter">
+            <UseCaseLiveFilter />
           </Route>
         </Switch>
       </Router>
