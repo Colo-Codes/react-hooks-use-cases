@@ -25,7 +25,7 @@ const UseCaseLiveFilter = props => {
     };
 
     useEffect(() => {
-        setFilteredArray(() => {
+        setFilteredArray((_) => {
             const newArray = array.filter(item => item.value.includes(inputValue)).filter(item => item.type.includes(inputType));
             return newArray;
         });

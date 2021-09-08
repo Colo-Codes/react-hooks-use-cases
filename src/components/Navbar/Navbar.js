@@ -25,6 +25,7 @@ const Navbar = props => {
                         <li><Link to="/useeffect/fetch-api">Running once on mount: fetch API data</Link></li>
                         <li><Link to="/useeffect/input-validation">Running on state change: validating input field</Link></li>
                         <li><Link to="/useeffect/live-filter">Running on state change: live filtering</Link></li>
+                        <li><Link to="/useeffect/animation">Running on state change: trigger animation on new array value</Link></li>
                     </ul>
                 </li>
             </ul>
