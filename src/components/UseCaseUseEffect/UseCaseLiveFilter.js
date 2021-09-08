@@ -49,11 +49,11 @@ const UseCaseLiveFilter = props => {
             <form style={{ maxWidth: '23rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
                     <label htmlFor="input-type">Filter by <b>type</b></label><br />
-                    <input type="text" id="input-type" onChange={inputTypeHandler} style={{ height: '1.5rem', width: '10rem', marginTop: '1rem' }} />
+                    <input type="text" id="input-type" autocomplete="off" onChange={inputTypeHandler} style={{ height: '1.5rem', width: '10rem', marginTop: '1rem' }} />
                 </div>
                 <div>
                     <label htmlFor="input-value">Filter by <b>value</b></label><br />
-                    <input type="text" id="input-value" onChange={inputValueHandler} style={{ height: '1.5rem', width: '10rem', marginTop: '1rem' }} />
+                    <input type="text" id="input-value" autocomplete="off" onChange={inputValueHandler} style={{ height: '1.5rem', width: '10rem', marginTop: '1rem' }} />
                 </div>
             </form>
             <br />
