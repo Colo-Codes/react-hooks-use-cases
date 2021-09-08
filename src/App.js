@@ -14,6 +14,7 @@ import UseCaseMultipleStates from './components/UseCaseUseReducer/UseCaseMultipl
 import UseCaseComplexStates from './components/UseCaseUseReducer/UseCaseComplexStates';
 import UseCaseFetchApi from './components/UseCaseUseEffect/UseCaseFetchApi';
 import UseCaseUseEffect from './components/UseCaseUseEffect/UseCaseUseEffect';
+import UseCaseInputValidation from './components/UseCaseUseEffect/UseCaseInputValidation';
 
 function App() {
   return (
@@ -57,6 +58,9 @@ function App() {
           </Route>
           <Route exact path="/useeffect/fetch-api">
             <UseCaseFetchApi />
+          </Route>
+          <Route exact path="/useeffect/input-validation">
+            <UseCaseInputValidation />
           </Route>
         </Switch>
       </Router>
