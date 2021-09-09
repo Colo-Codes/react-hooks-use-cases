@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 
 const array = [
-    { type: 'planet', value: 'Tatooine' },
-    { type: 'planet', value: 'Alderaan' },
-    { type: 'starship', value: 'Death Star' },
-    { type: 'starship', value: 'CR90 corvette' },
-    { type: 'starship', value: 'Star Destroyer' },
-    { type: 'person', value: 'Luke Skywalker' },
-    { type: 'person', value: 'Darth Vader' },
-    { type: 'person', value: 'Leia Organa' },
+    { key: '1', type: 'planet', value: 'Tatooine' },
+    { key: '2', type: 'planet', value: 'Alderaan' },
+    { key: '3', type: 'starship', value: 'Death Star' },
+    { key: '4', type: 'starship', value: 'CR90 corvette' },
+    { key: '5', type: 'starship', value: 'Star Destroyer' },
+    { key: '6', type: 'person', value: 'Luke Skywalker' },
+    { key: '7', type: 'person', value: 'Darth Vader' },
+    { key: '8', type: 'person', value: 'Leia Organa' },
 ];
 
 const UseCaseLiveFilter = props => {
@@ -49,11 +49,11 @@ const UseCaseLiveFilter = props => {
             <form style={{ maxWidth: '23rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
                     <label htmlFor="input-type">Filter by <b>type</b></label><br />
-                    <input type="text" id="input-type" autocomplete="off" onChange={inputTypeHandler} style={{ height: '1.5rem', width: '10rem', marginTop: '1rem' }} />
+                    <input type="text" id="input-type" autoComplete="off" onChange={inputTypeHandler} style={{ height: '1.5rem', width: '10rem', marginTop: '1rem' }} />
                 </div>
                 <div>
                     <label htmlFor="input-value">Filter by <b>value</b></label><br />
-                    <input type="text" id="input-value" autocomplete="off" onChange={inputValueHandler} style={{ height: '1.5rem', width: '10rem', marginTop: '1rem' }} />
+                    <input type="text" id="input-value" autoComplete="off" onChange={inputValueHandler} style={{ height: '1.5rem', width: '10rem', marginTop: '1rem' }} />
                 </div>
             </form>
             <br />
