@@ -17,7 +17,8 @@ import UseCaseUseEffect from './components/UseCaseUseEffect/UseCaseUseEffect';
 import UseCaseInputValidation from './components/UseCaseUseEffect/UseCaseInputValidation';
 import UseCaseLiveFilter from './components/UseCaseUseEffect/UseCaseLiveFilter';
 import UseCaseAnimation from './components/UseCaseUseEffect/UseCaseAnimation';
-import UseCaseUpdateFetch from './components/UseCaseUseEffect/UseCaseUpdateFetch';
+import UseCaseUpdateData from './components/UseCaseUseEffect/UseCaseUpdateData';
+import UseCaseUpdateApi from './components/UseCaseUseEffect/UseCaseUpdateApi';
 
 function App() {
   return (
@@ -71,8 +72,11 @@ function App() {
           <Route exact path="/useeffect/animation">
             <UseCaseAnimation />
           </Route>
-          <Route exact path="/useeffect/update-fetch">
-            <UseCaseUpdateFetch />
+          <Route exact path="/useeffect/update-data">
+            <UseCaseUpdateData />
+          </Route>
+          <Route exact path="/useeffect/update-api">
+            <UseCaseUpdateApi />
           </Route>
         </Switch>
       </Router>
