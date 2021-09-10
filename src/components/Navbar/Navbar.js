@@ -33,6 +33,7 @@ const Navbar = props => {
                 <li><Link to="/usememo">useMemo</Link>
                     <ul>
                         <li><Link to="/usememo/sort">Expensive function call: get a list of Reddits and sort them alphabetically</Link></li>
+                        <li><Link to="/usememo/initial-value">Expensive function call: create a complex initial value counting how many posts have more than 10 votes in a subreddit</Link></li>
                     </ul>
                 </li>
             </ul>

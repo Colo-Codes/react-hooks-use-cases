@@ -21,6 +21,7 @@ import UseCaseUpdateData from './components/UseCaseUseEffect/UseCaseUpdateData';
 import UseCaseUpdateApi from './components/UseCaseUseEffect/UseCaseUpdateApi';
 import UseCaseUseMemo from './components/UseCaseUseMemo/UseCaseUseMemo';
 import UseCaseSort from './components/UseCaseUseMemo/UseCaseSort';
+import UseCaseInitialValue from './components/UseCaseUseMemo/UseCaseInitialValue';
 
 function App() {
   return (
@@ -85,6 +86,9 @@ function App() {
           </Route>
           <Route exact path="/usememo/sort">
             <UseCaseSort />
+          </Route>
+          <Route exact path="/usememo/initial-value">
+            <UseCaseInitialValue />
           </Route>
         </Switch>
       </Router>

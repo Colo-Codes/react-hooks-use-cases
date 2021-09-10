@@ -18,7 +18,7 @@ const UseCaseSort = props => {
     };
 
     const expensiveCalculation = (redditsList) => {
-        return redditsList.map(post => post.data.title).sort();;
+        return redditsList.map(post => post.data.title).sort();
     };
 
     const listDisplay = useMemo(() => {
