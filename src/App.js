@@ -19,6 +19,8 @@ import UseCaseLiveFilter from './components/UseCaseUseEffect/UseCaseLiveFilter';
 import UseCaseAnimation from './components/UseCaseUseEffect/UseCaseAnimation';
 import UseCaseUpdateData from './components/UseCaseUseEffect/UseCaseUpdateData';
 import UseCaseUpdateApi from './components/UseCaseUseEffect/UseCaseUpdateApi';
+import UseCaseUseMemo from './components/UseCaseUseMemo/UseCaseUseMemo';
+import UseCaseSort from './components/UseCaseUseMemo/UseCaseSort';
 
 function App() {
   return (
@@ -77,6 +79,12 @@ function App() {
           </Route>
           <Route exact path="/useeffect/update-api">
             <UseCaseUpdateApi />
+          </Route>
+          <Route exact path="/usememo">
+            <UseCaseUseMemo />
+          </Route>
+          <Route exact path="/usememo/sort">
+            <UseCaseSort />
           </Route>
         </Switch>
       </Router>

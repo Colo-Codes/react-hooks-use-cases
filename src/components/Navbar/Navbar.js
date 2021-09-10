@@ -30,6 +30,11 @@ const Navbar = props => {
                         <li><Link to="/useeffect/update-api">Running on props change: updating fetched API data to get updated BTC price</Link></li>
                     </ul>
                 </li>
+                <li><Link to="/usememo">useMemo</Link>
+                    <ul>
+                        <li><Link to="/usememo/sort">Expensive function call: get a list of Reddits and sort them alphabetically</Link></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     );
