@@ -1,0 +1,12 @@
+nav {
+    font-size: small;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links-container li {
+    margin: 0 1rem;
+}

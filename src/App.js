@@ -2,24 +2,20 @@ import classes from './App.module.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import React from 'react';
 import Home from './components/Home/Home';
-import UseCaseUseState from './components/UseCaseUseState/UseCaseUseState';
 import Navbar from './components/Navbar/Navbar';
 import UseCaseStateManagement from './components/UseCaseUseState/UseCaseStateManagement';
 import UseCaseConditionalRender from './components/UseCaseUseState/UseCaseConditionalRender';
 import UseCaseToggle from './components/UseCaseUseState/UseCaseToggle';
 import UseCaseCounter from './components/UseCaseUseState/UseCaseCounter';
 import UseCaseApi from './components/UseCaseUseState/UseCaseApi';
-import UseCaseUseReducer from './components/UseCaseUseReducer/UseCaseUseReducer';
 import UseCaseMultipleStates from './components/UseCaseUseReducer/UseCaseMultipleStates';
 import UseCaseComplexStates from './components/UseCaseUseReducer/UseCaseComplexStates';
 import UseCaseFetchApi from './components/UseCaseUseEffect/UseCaseFetchApi';
-import UseCaseUseEffect from './components/UseCaseUseEffect/UseCaseUseEffect';
 import UseCaseInputValidation from './components/UseCaseUseEffect/UseCaseInputValidation';
 import UseCaseLiveFilter from './components/UseCaseUseEffect/UseCaseLiveFilter';
 import UseCaseAnimation from './components/UseCaseUseEffect/UseCaseAnimation';
 import UseCaseUpdateData from './components/UseCaseUseEffect/UseCaseUpdateData';
 import UseCaseUpdateApi from './components/UseCaseUseEffect/UseCaseUpdateApi';
-import UseCaseUseMemo from './components/UseCaseUseMemo/UseCaseUseMemo';
 import UseCaseSort from './components/UseCaseUseMemo/UseCaseSort';
 import UseCaseInitialValue from './components/UseCaseUseMemo/UseCaseInitialValue';
 
@@ -31,64 +27,84 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/usestate">
-            <UseCaseUseState />
+            <div className={classes.centered}>
+              <Home />
+            </div>
           </Route>
           <Route exact path="/usestate/state-management">
-            <UseCaseStateManagement />
+            <div className={classes.centered}>
+              <UseCaseStateManagement />
+            </div>
           </Route>
           <Route exact path="/usestate/conditional-rendering">
-            <UseCaseConditionalRender />
+            <div className={classes.centered}>
+              <UseCaseConditionalRender />
+            </div>
           </Route>
           <Route exact path="/usestate/toggle">
-            <UseCaseToggle />
+            <div className={classes.centered}>
+              <UseCaseToggle />
+            </div>
           </Route>
           <Route exact path="/usestate/counter">
-            <UseCaseCounter />
+            <div className={classes.centered}>
+              <UseCaseCounter />
+            </div>
           </Route>
           <Route exact path="/usestate/api">
-            <UseCaseApi />
-          </Route>
-          <Route exact path="/usereducer">
-            <UseCaseUseReducer />
+            <div className={classes.centered}>
+              <UseCaseApi />
+            </div>
           </Route>
           <Route exact path="/usereducer/multiple-states">
-            <UseCaseMultipleStates />
+            <div className={classes.centered}>
+              <UseCaseMultipleStates />
+            </div>
           </Route>
           <Route exact path="/usereducer/complex-states">
-            <UseCaseComplexStates />
-          </Route>
-          <Route exact path="/useeffect">
-            <UseCaseUseEffect />
+            <div className={classes.centered}>
+              <UseCaseComplexStates />
+            </div>
           </Route>
           <Route exact path="/useeffect/fetch-api">
-            <UseCaseFetchApi />
+            <div className={classes.centered}>
+              <UseCaseFetchApi />
+            </div>
           </Route>
           <Route exact path="/useeffect/input-validation">
-            <UseCaseInputValidation />
+            <div className={classes.centered}>
+              <UseCaseInputValidation />
+            </div>
           </Route>
           <Route exact path="/useeffect/live-filter">
-            <UseCaseLiveFilter />
+            <div className={classes.centered}>
+              <UseCaseLiveFilter />
+            </div>
           </Route>
           <Route exact path="/useeffect/animation">
-            <UseCaseAnimation />
+            <div className={classes.centered}>
+              <UseCaseAnimation />
+            </div>
           </Route>
           <Route exact path="/useeffect/update-data">
-            <UseCaseUpdateData />
+            <div className={classes.centered}>
+              <UseCaseUpdateData />
+            </div>
           </Route>
           <Route exact path="/useeffect/update-api">
-            <UseCaseUpdateApi />
-          </Route>
-          <Route exact path="/usememo">
-            <UseCaseUseMemo />
+            <div className={classes.centered}>
+              <UseCaseUpdateApi />
+            </div>
           </Route>
           <Route exact path="/usememo/sort">
-            <UseCaseSort />
+            <div className={classes.centered}>
+              <UseCaseSort />
+            </div>
           </Route>
           <Route exact path="/usememo/initial-value">
-            <UseCaseInitialValue />
+            <div className={classes.centered}>
+              <UseCaseInitialValue />
+            </div>
           </Route>
         </Switch>
       </Router>
