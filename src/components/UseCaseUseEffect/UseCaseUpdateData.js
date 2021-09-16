@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 
 const BaconParagraphs = props => {
     const [baconParagraphText, setBaconParagraphText] = useState([]);
