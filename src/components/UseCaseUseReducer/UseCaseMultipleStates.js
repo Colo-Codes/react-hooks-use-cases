@@ -1,49 +1,76 @@
-import { useReducer } from "react";
+import { useReducer } from 'react';
+import './UseCaseMultipleStates.css';
 
-const myReducer = (prevState, action) => {
-    let array;
-    switch (action.type) {
-        case 'ADD':
-            array = [...prevState];
-            array.push(action.payload);
-            return array;
-        case 'REMOVE':
-            array = [...prevState];
-            array.pop();
-            return array;
-        case 'CLEAR':
-            return prevState = [];
-        default:
-            break;
-    }
+const randomFruits = ['apple', 'orange', 'mango', 'pineapple', 'pear'];
+
+const initialState = {
+    fruits: ['apple'], // or, we can have []
 };
 
-const UseCaseMultipleStates = props => {
-    const [state, dispatcher] = useReducer(myReducer, ['initial value']);
-    console.log(state);
+const reducer = (prevState, action) => {
+    let { actionType, actionData } = action; // actionData is payload for action
 
-    // Three different state triggers
-    const addHandler = () => {
-        dispatcher({ type: 'ADD', payload: Math.round((Math.random() * 100 + 100)) });
+    let fruitsNew = [];
+    let { fruits } = prevState;
+    switch (actionType) {
+        case 'AddFruit':
+            fruitsNew = [...fruits, actionData];
+            break;
+        case 'RemoveLastFruit':
+            fruitsNew = [...fruits.slice(0, fruits.length - 1)];
+            break;
+        case 'ClearFruitBasket':
+            break;
+        default:
+            throw new Error('Unkown type');
+    }
+
+    return {
+        ...prevState,
+        fruits: fruitsNew,
     };
-    const removeHandler = () => {
-        dispatcher({ type: 'REMOVE' });
-    };
-    const clearHandler = () => {
-        dispatcher({ type: 'CLEAR' });
-    };
+};
+
+const rF = () =>
+    // get a random friut
+    randomFruits[
+        Math.trunc((Math.random() * randomFruits.length) % randomFruits.length)
+    ];
+
+const UseCaseMultipleStates = (props) => {
+    const [state, dispatch] = useReducer(reducer, initialState);
+
+    const onAdd = () => dispatch({ actionType: 'AddFruit', actionData: rF() });
+    const onRemove = () => dispatch({ actionType: 'RemoveLastFruit' });
+    const onClear = () => dispatch({ actionType: 'ClearFruitBasket' });
 
     return (
-        <>
+        <div>
+            <h2>
+                useReducer() use case - Manage multiple states: modify an array
+            </h2>
             <hr />
-            <h2>useReducer use case</h2>
-            <h3>Manage multiple states: modify an array</h3>
-            <button onClick={addHandler}>[+] Add random value to array</button>
-            <button style={{ margin: "0 2rem" }} onClick={removeHandler}>[-] Remove last value from array</button>
-            <button onClick={clearHandler}>[x] Clear array</button>
-            <p>Shopping cart array:</p>
-            <p><b>{state.length === 0 && '(empty)'}{state.join(' - ')}</b></p>
-        </>
+
+            <h3>Shopping cart</h3>
+
+            <h4>Items:</h4>
+            <button onClick={onAdd}>+ Add random fruit to cart</button>
+            <button onClick={onRemove}>- Remove last from cart</button>
+            <button onClick={onClear}>x Clear array</button>
+
+            <h5>Fruits:</h5>
+            <ul class="fruit-basket">
+                {state.fruits.length
+                    ? state.fruits //
+                          .map((item, i) => (
+                              <li class="fruit" key={i}>
+                                  {item}
+                              </li>
+                          ))
+                    : '(empty)'}
+            </ul>
+            <hr />
+        </div>
     );
 };
 

@@ -23,8 +23,10 @@ function App() {
   return (
     <div className={classes.main}>
       <h1>React hooks use cases</h1>
+      <hr />
       <Router>
         <Navbar />
+        <hr />
         <Switch>
           <Route exact path="/">
             <div className={classes.centered}>

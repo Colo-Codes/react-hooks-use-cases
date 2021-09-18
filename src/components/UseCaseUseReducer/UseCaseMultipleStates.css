@@ -1,0 +1,14 @@
+.add,
+.remove,
+.clear {
+    margin: 0 1rem;
+}
+
+.fruit-basket {
+    list-style-type: none;
+    overflow: hidden;
+}
+.fruit {
+    float: left;
+    padding-right: 16px;
+}
